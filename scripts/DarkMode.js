@@ -27,3 +27,20 @@ document.addEventListener("DOMContentLoaded", updateMode);
 
 
 window.addEventListener("popstate", updateMode);
+
+
+const darkModeToggle = document.getElementById("dark-mode-toggle");
+const sunIcon = document.querySelector(".sun-icon");
+const moonIcon = document.querySelector(".darkmode-icon");
+
+darkModeToggle.addEventListener("click", function() {
+    if (document.body.classList.contains("dark-mode")) {
+        
+        sunIcon.style.display = "inline";
+        moonIcon.style.display = "none";
+    } else {
+         
+        sunIcon.style.display = "none";
+        moonIcon.style.display = "inline";
+    }
+});
