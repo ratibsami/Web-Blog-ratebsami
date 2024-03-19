@@ -49,7 +49,7 @@ window.addEventListener('beforeunload',
 function(event) {
     
     if 
-    (this.document.body.classList.contains("dark-mode")) {
+    (document.body.classList.contains("dark-mode")) {
       
     document.querySelector('.darkmode-icon').style.display = 'none';
     }
