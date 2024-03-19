@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+.shape {
+    max-width: 100%;
+}
+
+
 @font-face {
     font-family: iranyakan;
     src: url(../fonts/iranyekan.ttf);
