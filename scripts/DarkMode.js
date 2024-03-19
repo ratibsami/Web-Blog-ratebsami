@@ -44,3 +44,9 @@ darkModeToggle.addEventListener("click", function() {
         moonIcon.style.display = "inline";
     }
 });
+
+window.addEventListener('unload', 
+function(){
+    
+    this.document.querySelector('.darkmode-icon').style.display = 'none';
+});
