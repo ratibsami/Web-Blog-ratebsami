@@ -54,3 +54,30 @@ function(event) {
     document.querySelector('.darkmode-icon').style.display = 'none';
     }
 });
+
+
+const isDarkModeEnabled = localStorage.getItem("isDarkModeEnabled");
+
+function toggleImages() {
+    const images = document.querySelectorAll('.darkmode-icon'); 
+    images.forEach(img => {
+        if (isDarkModeEnabled === "true") {
+             
+            if (img.alt === "sun") {
+                img.classList.remove("commented-out");
+            } else if (img.alt === "darkmode") {
+                img.classList.add("commented-out");
+            }
+        } else {
+            
+            if (img.alt === "sun") {
+                img.classList.add("commented-out");
+            } else if (img.alt === "darkmode") {
+                img.classList.remove("commented-out");
+            }
+        }
+    });
+}
+
+
+toggleImages();
