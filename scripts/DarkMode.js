@@ -36,38 +36,13 @@ const moonIcon = document.querySelector(".darkmode-icon");
 darkModeToggle.addEventListener("click", function() {
     if (document.body.classList.contains("dark-mode")) {
         
-        sunIcon.style.display = "inline";
+        sunIcon.style.display = "block";
         moonIcon.style.display = "none";
     } else {
          
         sunIcon.style.display = "none";
-        moonIcon.style.display = "inline";
+        moonIcon.style.display = "block";
     }
 });
 
 
-const isDarkModeEnabled = localStorage.getItem("isDarkModeEnabled");
-
-function toggleImages() {
-    const images = document.querySelectorAll('.darkmode-icon'); 
-    images.forEach(img => {
-        if (isDarkModeEnabled === "true") {
-             
-            if (img.alt === "sun") {
-                img.classList.remove("commented-out");
-            } else if (img.alt === "darkmode") {
-                img.classList.add("commented-out");
-            }
-        } else {
-            
-            if (img.alt === "sun") {
-                img.classList.add("commented-out");
-            } else if (img.alt === "darkmode") {
-                img.classList.remove("commented-out");
-            }
-        }
-    });
-}
-
-
-toggleImages();
