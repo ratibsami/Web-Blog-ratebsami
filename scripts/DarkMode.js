@@ -45,8 +45,8 @@ darkModeToggle.addEventListener("click", function() {
     }
 });
 
-window.addEventListener('unload', 
-function(){
+window.addEventListener('beforeunload', 
+function(event){
     
-    this.document.querySelector('.darkmode-icon').style.display = 'none';
+    document.querySelector('.darkmode-icon').style.display = 'none';
 });
