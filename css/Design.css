@@ -83,11 +83,13 @@ hr {
 .darkmode-icon {
     width: 23px;
     padding-top: 5px;
+    display: inline;
 }
 
 .sun-icon {
     width: 23px;
     padding-top: 5px;
+    display: none;
 }
 
 .User .UserIcon {
@@ -501,6 +503,14 @@ section img {
     .newpost {
         background-color: #202324;
         border-color: aquamarine;
+    }
+
+    .sun-icon {
+        display: inline;
+    }
+
+    .darkmode-icon {
+        display: none;
     }
 }
 
