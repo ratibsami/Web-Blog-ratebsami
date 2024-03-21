@@ -208,25 +208,7 @@ section img {
     color: blue;
 }
 
-.pagination a.active {
-      background-color: #e2e2e2;
-      border-radius: 36px 36px 0px 0px;
-      margin-top: -10px;
-}
 
-.pagination a {
-    text-decoration: none;
-    font-size: large;
-    padding: 10px;
-    padding-left: 12px;
-    font-family: CleanUx;
-    color: #181818;
-}
-
-.pagination a:hover {
-    background-color: #e2e2e2;
-    border-radius: 36px 36px 0px 0px;
-}
 
 .back img {
     width: 12px;
