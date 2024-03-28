@@ -227,10 +227,16 @@ section img {
     width: 23px;
     padding-top: 5px;
     
+    
 }
 
+.homeicon-about path {
+    fill: #3c3c3c;
+}
+
+
 .home-about {
-    background-color:#ffffff10;
+    background-color:#ffffff00;
     padding-top: 13px;
     padding-left: 18px;
     padding-right: 18px;
@@ -252,8 +258,12 @@ section img {
     padding-top: 5px;
 }
 
+.UserIcon_about path {
+    fill: #1492E6;
+}
+
 .language-about {
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0);
     padding-top: 13px;
     padding-left: 18px;
     padding-right: 18px;
@@ -414,6 +424,11 @@ section img {
     border-left: none;
 }
 
+/* Project just for fun */
+
+
+
+
 .newpost:hover {
     border-right: solid 10px #181818;
 }
@@ -431,6 +446,13 @@ section img {
 .date-timer {
     text-align: right;
     font-family: CleanUx;
+}
+
+.timer {
+    position: absolute;
+    margin-right: -25px;
+    margin-top: 0px;
+    width: 18px;
 }
 
 .continue {
@@ -511,3 +533,39 @@ section img {
 }
 
 
+/* Icons svg Dark-mode Theme */
+
+
+.dark-mode {
+    .language-icon path {
+        fill: white;
+    }
+
+    .UserIcon path {
+        fill: white;
+    }
+
+    .darkmode:hover {
+        background-color: #202324;
+    }
+
+    #text path {
+        fill: white;
+    }
+
+    .timer path {
+        fill: white;
+    }
+
+    .homeicon-about path {
+        fill: #ffffff;
+    }
+
+    .icons path {
+        fill: white;
+    }
+
+    .links a {
+        color: white;
+    }
+}

@@ -401,6 +401,12 @@ section img {
     font-family: CleanUx;
 }
 
+.timer {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 0px;
+    width: 18px;
+}
 
 
 .continue:hover {
@@ -450,5 +456,43 @@ section img {
 
     .darkmode-icon {
         display: none;
+    }
+}
+
+
+/* Icons svg Dark-mode Theme */
+
+
+.dark-mode {
+    .language-icon path {
+        fill: white;
+    }
+
+    .UserIcon path {
+        fill: white;
+    }
+
+    .darkmode:hover {
+        background-color: #202324;
+    }
+
+    #text path {
+        fill: white;
+    }
+
+    .timer path {
+        fill: white;
+    }
+
+    .homeicon-about path {
+        fill: #ffffff;
+    }
+
+    .icons path {
+        fill: white;
+    }
+
+    .links a {
+        color: white;
     }
 }
