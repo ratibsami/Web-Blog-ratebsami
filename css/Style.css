@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --themeColor:#202324;
+}
+
+
 @font-face {
     font-family: iranyakan;
     src: url(../fonts/iranyekan.ttf);
@@ -270,6 +275,11 @@ section img {
 }
 
 .dark-mode {
+
+    meta[name="theme-color"] {
+        content: var(--themeColor);
+    }
+
     background-color: #181a1b;
     p {
         color: white;

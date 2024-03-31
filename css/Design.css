@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+:root {
+    --themeColor:#202324;
+}
 
 
 
@@ -312,6 +315,11 @@ section img {
 /* Dark Mode Powered By DarkReader */
 
 .dark-mode {
+
+    meta[name="theme-color"] {
+        content: var(--themeColor);
+    }
+
     background-color: #181a1b;
     p {
         color: white;
