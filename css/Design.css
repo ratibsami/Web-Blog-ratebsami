@@ -6,6 +6,15 @@
     --themeColor:#202324;
 }
 
+@font-face {
+    font-family: SFPRO;
+    src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: SFPRO-M;
+    src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+}
 
 
 @font-face {
@@ -575,5 +584,200 @@ section img {
 
     .links a {
         color: white;
+    }
+}
+
+/* Projects */
+
+.titlebar {
+    font-family: iranyakan;
+    font-size: medium;
+    margin-right: 10px;
+}
+
+
+.projects {
+    max-width: 100%;
+    max-height: 550px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    background-color: #fc4850;
+    border-radius: 8px;
+}
+
+.pong {
+    font-size: 2rem;
+    font-family: SFPRO-M;
+    font-weight: 400;
+    padding: 20px;
+    margin-top: -10px;
+}
+
+.pong-text {
+    padding: 20px;
+    margin-top: -10vh;
+    font-family: SFPRO;
+}
+
+.Github {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.Github-Go {
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 0px;
+    border: none;
+    border-radius: 36px;
+    margin-left: 15px;
+}
+
+.Github-star {
+    background-color: rgba(245, 222, 179, 0);
+    padding: 8px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 0px;
+    border: none;
+    border-radius: 36px;
+    margin-left: 90px;
+}
+
+
+.Github-Go star {
+    width: 24px;
+    height: 24px;
+}
+
+.Github-Go:hover {
+    box-shadow: 0px 2px 20px 20px #1818180b;
+    background-color: #ffffffc7;
+}
+
+.Github-Go a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.projects-02 {
+    margin-top: 10px;
+    max-width: 100%;
+    max-height: 550px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    background-color: #D7FFE9;
+    border-radius: 8px;
+}
+
+.image {
+    color: #1C423E;
+    font-size: 2rem;
+    font-family: SFPRO-M;
+    font-weight: 400;
+    padding: 20px;
+    margin-top: -10px;
+}
+
+.image-text {
+    color: #1C423E;
+    padding: 20px;
+    margin-top: -10vh;
+    font-family: SFPRO;
+}
+
+.Github-image {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.Github-image path {
+    fill: #1C423E;
+}
+
+.Github-Go-image {
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 0px;
+    border: none;
+    border-radius: 36px;
+    margin-left: 15px;
+}
+
+.Github-star-image {
+    background-color: rgba(245, 222, 179, 0);
+    padding: 8px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 0px;
+    border: none;
+    border-radius: 36px;
+    margin-left: 90px;
+}
+
+
+.Github-Go-image star {
+    width: 24px;
+    height: 24px;
+}
+
+.star-image path {
+    fill: #1C423E;
+}
+
+.Github-Go-image:hover {
+    box-shadow: 0px 2px 20px 20px #1818180b;
+    background-color: #ffffffc7;
+}
+
+.Github-Go-image a {
+    text-align: center;
+    text-decoration: none;
+    color: #1C423E;
+}
+
+
+
+
+@media (max-width:1024px) {
+    .image-text {
+        margin-top: -4vh;
+    }
+}
+
+@media (max-width:480px) {
+    .image-text {
+        margin-top: -6vh;
+    }
+}
+
+@media (max-width:1024px) {
+    .pong-text {
+        margin-top: -4vh;
+    }
+}
+
+@media (max-width:480px) {
+    .pong-text {
+        margin-top: -6vh;
+    }
+}
+
+.dark-mode {
+    .image-text {
+        color: #1C423E;
+    }
+
+    .image {
+        color: #1C423E;
     }
 }
